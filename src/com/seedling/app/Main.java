@@ -7,6 +7,7 @@ import com.seedling.app.reverse.ReverseArray;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static com.seedling.app.fibonacci.Fibonacci.*;
 import static com.seedling.app.first_and_last_digits.FirstLastDigit.firstDigit;
 import static com.seedling.app.first_and_last_digits.FirstLastDigit.lastDigit;
 import static com.seedling.app.multiples.Multiple.isMultiple;
@@ -36,7 +37,9 @@ public class Main {
 //        sortAndBinarySearchIntArrayDemonstration();
 //        sortAndBinarySearchStringArrayDemonstration();
 //        stackArrayListDemonstration();
-        queueArrayListDemonstration();
+//        queueArrayListDemonstration();
+//        fibonacciSequenceFor(30);
+//        fibonacciSequenceWhile(900000);
 
     }
 
