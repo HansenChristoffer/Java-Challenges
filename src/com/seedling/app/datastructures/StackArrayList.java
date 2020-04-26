@@ -1,19 +1,24 @@
 package com.seedling.app.datastructures;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * My own try at making a Stack ArrayList. By also using generics it is not type set and can be of any type essentially.
+ * A Stack follows the LiFo principle, which stands for "Last in First out". Last element added will be first out!
  *
  * How to declare and initialize a Stack
  *  -> StackArrayList<T> stack = new StackArrayList<>();
  *  Example:
- *    -> StackArrayList<String> stack = new StackArrayList<>();
+ *   -> StackArrayList<String> stack = new StackArrayList<>();
  *
- * @param <T> Type
+ * @param <T> Type of the Stack
+ *
+ * @author  Christoffer Hansen
+ * @see     Collection
+ * @see     List
+ * @see     LinkedList
+ * @see     Vector
+ * @since 1.1
  */
 public class StackArrayList<T> {
 
