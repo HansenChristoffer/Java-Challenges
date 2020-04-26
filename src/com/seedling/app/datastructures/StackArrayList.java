@@ -42,7 +42,7 @@ public class StackArrayList<T> {
     /**
      * Push the content of an array onto the stack
      *
-     * @param eArr Array to add to the stack
+     * @param eArr Array to push onto the stack
      */
     public void pushAll(T[] eArr) {
         stack.addAll(Arrays.asList(eArr));
@@ -51,7 +51,7 @@ public class StackArrayList<T> {
     /**
      * Push the content of a List object onto the stack
      *
-     * @param eList
+     * @param eList List object to push onto the stack
      */
     public void pushAll(List<T> eList) {
         stack.addAll(eList);
@@ -77,7 +77,7 @@ public class StackArrayList<T> {
      *
      * @return Top element of the stack
      */
-    public T sneakPeek() {
+    public T peek() {
         if (!stack.isEmpty()) {
             return stack.get(stack.size() - 1);
         } else {

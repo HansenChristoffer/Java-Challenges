@@ -77,23 +77,23 @@ public class Main {
 
         StackArrayList<String> stringStack = new StackArrayList<>();
         System.out.println("stringStack.size() = " + stringStack.size());
-        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.peek());
         stringStack.push("Hello");
         System.out.println("stringStack.size() = " + stringStack.size());
-        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.peek());
         stringStack.pushAll(binStringArray);
         System.out.println("stringStack.size() = " + stringStack.size());
-        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.peek());
         ArrayList<String> testList = new ArrayList<>(Arrays.asList("Test", "list", "pewpew"));
         stringStack.pushAll(testList);
         System.out.println("stringStack.size() = " + stringStack.size());
-        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.peek());
         System.out.println("stringStack.contains(\"Hello\") = " + stringStack.contains("Hello"));
         System.out.println("stringStack.contains(\"pqr\") = " + stringStack.contains("pqr"));
         String popString = stringStack.pop();
         System.out.println("popString = " + popString);
         System.out.println("stringStack.contains(popString) = " + stringStack.contains(popString));
-        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.peek());
         System.out.println("stringStack.hashCode() = " + stringStack.hashCode());
         System.out.println("stringStack.isEmpty() = " + stringStack.isEmpty());
         System.out.println("stringStack.size() = " + stringStack.size());
