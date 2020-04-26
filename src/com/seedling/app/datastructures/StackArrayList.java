@@ -8,7 +8,11 @@ import java.util.Objects;
 /**
  * My own try at making a Stack ArrayList. By also using generics it is not type set and can be of any type essentially.
  *
- * StackArrayList stack = new StackArrayList</>();
+ * How to declare and initialize a Stack
+ *  -> StackArrayList<T> stack = new StackArrayList<>();
+ *  Example:
+ *    -> StackArrayList<String> stack = new StackArrayList<>();
+ *
  * @param <T> Type
  */
 public class StackArrayList<T> {
