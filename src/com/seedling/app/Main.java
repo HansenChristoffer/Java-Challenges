@@ -1,7 +1,9 @@
 package com.seedling.app;
 
+import com.seedling.app.datastructures.StackArrayList;
 import com.seedling.app.reverse.ReverseArray;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import static com.seedling.app.first_and_last_digits.FirstLastDigit.firstDigit;
@@ -72,5 +74,32 @@ public class Main {
 
         System.out.println("Before searching = " + Arrays.toString(binStringArray));
         System.out.println("Searching for = pqr |> Is at Index = " + binarySearch(binStringArray, "pqr"));
+
+        StackArrayList<String> stringStack = new StackArrayList<>();
+        System.out.println("stringStack.size() = " + stringStack.size());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        stringStack.push("Hello");
+        System.out.println("stringStack.size() = " + stringStack.size());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        stringStack.pushAll(binStringArray);
+        System.out.println("stringStack.size() = " + stringStack.size());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        ArrayList<String> testList = new ArrayList<>(Arrays.asList("Test", "list", "pewpew"));
+        stringStack.pushAll(testList);
+        System.out.println("stringStack.size() = " + stringStack.size());
+        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        System.out.println("stringStack.contains(\"Hello\") = " + stringStack.contains("Hello"));
+        System.out.println("stringStack.contains(\"pqr\") = " + stringStack.contains("pqr"));
+        String popString = stringStack.pop();
+        System.out.println("popString = " + popString);
+        System.out.println("stringStack.contains(popString) = " + stringStack.contains(popString));
+        System.out.println("stringStack.sneakPeek() = " + stringStack.sneakPeek());
+        System.out.println("stringStack.hashCode() = " + stringStack.hashCode());
+        System.out.println("stringStack.isEmpty() = " + stringStack.isEmpty());
+        System.out.println("stringStack.size() = " + stringStack.size());
+        stringStack.clear();
+        System.out.println("stringStack.size() = " + stringStack.size());
+        System.out.println("stringStack.isEmpty() = " + stringStack.isEmpty());
+
     }
 }
