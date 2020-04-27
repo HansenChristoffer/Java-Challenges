@@ -6,7 +6,9 @@ import com.seedling.app.reverse.ReverseArray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
+import static com.seedling.app.maths.AllDigits.getDigits;
 import static com.seedling.app.maths.FirstLastDigit.firstDigit;
 import static com.seedling.app.maths.FirstLastDigit.lastDigit;
 import static com.seedling.app.maths.Multiple.isMultiple;
@@ -39,6 +41,8 @@ public class Main {
 //        queueArrayListDemonstration();
 //        fibonacciSequenceFor(30);
 //        fibonacciSequenceWhile(900000);
+//        List<Integer> digits = getDigits(1234, new ArrayList<>());
+//        digits.forEach(i -> System.out.println("i = " + i));
 
     }
 
