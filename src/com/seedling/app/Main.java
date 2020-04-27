@@ -2,13 +2,16 @@ package com.seedling.app;
 
 import com.seedling.app.datastructures.QueueArrayList;
 import com.seedling.app.datastructures.StackArrayList;
+import com.seedling.app.fibonacci.Fibonacci;
 import com.seedling.app.reverse.ReverseArray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.seedling.app.fibonacci.Fibonacci.fibonacciSequenceWhile;
 import static com.seedling.app.maths.AllDigits.getDigits;
+import static com.seedling.app.maths.ArmstrongNumber.isArmstrongNumber;
 import static com.seedling.app.maths.FirstLastDigit.firstDigit;
 import static com.seedling.app.maths.FirstLastDigit.lastDigit;
 import static com.seedling.app.maths.Multiple.isMultiple;
@@ -27,7 +30,7 @@ public class Main {
 
     private void run() {
 
-        // Demonstrations
+//        Demonstrations
 //        palindromeDemonstration();
 //        multipleDemontration();
 //        sumOfAllDivisiblesDemonstration();
@@ -39,10 +42,9 @@ public class Main {
 //        sortAndBinarySearchStringArrayDemonstration();
 //        stackArrayListDemonstration();
 //        queueArrayListDemonstration();
-//        fibonacciSequenceFor(30);
-//        fibonacciSequenceWhile(900000);
-//        List<Integer> digits = getDigits(1234, new ArrayList<>());
-//        digits.forEach(i -> System.out.println("i = " + i));
+//        fibonacciSequenceDemonstration();
+//        allDigitsDemonstration();
+//        armstrongNumberDemonstration();
 
     }
 
@@ -199,6 +201,25 @@ public class Main {
         stringQueue.clear();
         System.out.println("stringQueue.size() = " + stringQueue.size());
         System.out.println("stringQueue.isEmpty() = " + stringQueue.isEmpty());
+    }
+
+    private void fibonacciSequenceDemonstration() {
+        Fibonacci.fibonacciSequenceFor(30);
+        fibonacciSequenceWhile(900000);
+    }
+
+    private void allDigitsDemonstration() {
+        List<Integer> digits = getDigits(1234, new ArrayList<>());
+        digits.forEach(i -> System.out.println("i = " + i));
+    }
+
+    private void armstrongNumberDemonstration() {
+        System.out.println("isArmstrongNumber(0) = " + isArmstrongNumber(0)); // true
+        System.out.println("isArmstrongNumber(1) = " + isArmstrongNumber(1)); // true
+        System.out.println("isArmstrongNumber(153) = " + isArmstrongNumber(153)); // true
+        System.out.println("isArmstrongNumber(370) = " + isArmstrongNumber(370)); // true
+        System.out.println("isArmstrongNumber(1234) = " + isArmstrongNumber(1234)); // false
+        System.out.println("isArmstrongNumber(4321) = " + isArmstrongNumber(4321)); // false
     }
 
 }
