@@ -1,15 +1,18 @@
 package com.seedling.app;
 
-import com.seedling.app.datastructures.QueueArrayList;
-import com.seedling.app.datastructures.StackArrayList;
-import com.seedling.app.fibonacci.Fibonacci;
+import com.seedling.app.collections.MaxValue;
+import com.seedling.app.collections.datastructures.QueueArrayList;
+import com.seedling.app.collections.datastructures.StackArrayList;
+import com.seedling.app.maths.Fibonacci;
 import com.seedling.app.reverse.ReverseArray;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.seedling.app.fibonacci.Fibonacci.fibonacciSequenceWhile;
+import static com.seedling.app.collections.MaxValue.getLargestValue;
+import static com.seedling.app.collections.MaxValue.getLargestValueIndex;
+import static com.seedling.app.maths.Fibonacci.fibonacciSequenceWhile;
 import static com.seedling.app.maths.AllDigits.getDigits;
 import static com.seedling.app.maths.ArmstrongNumber.isArmstrongNumber;
 import static com.seedling.app.maths.FirstLastDigit.firstDigit;
@@ -45,7 +48,7 @@ public class Main {
 //        fibonacciSequenceDemonstration();
 //        allDigitsDemonstration();
 //        armstrongNumberDemonstration();
-
+//        maxValueDemonstration();
     }
 
     private void palindromeDemonstration() {
@@ -220,6 +223,20 @@ public class Main {
         System.out.println("isArmstrongNumber(370) = " + isArmstrongNumber(370)); // true
         System.out.println("isArmstrongNumber(1234) = " + isArmstrongNumber(1234)); // false
         System.out.println("isArmstrongNumber(4321) = " + isArmstrongNumber(4321)); // false
+    }
+
+    private void maxValueDemonstration() {
+        System.out.println("getLargestValue(" +
+                "new ArrayList<Integer>(Arrays.asList(12, 32, 42, 22, 86, " +
+                "734, 0, 23, 75, 733, 827, 2391, 847, 123456))); = " +
+                getLargestValue(new ArrayList<Integer>(Arrays.asList(
+                        12, 32, 42, 22, 86, 734, 0, 23, 75, 733, 827, 2391, 847, 123456)))); // Expected: 123456
+
+        System.out.println("getLargestValueIndex(" +
+                "new ArrayList<Integer>(Arrays.asList(12, 32, 42, 22, 86, " +
+                "734, 0, 23, 75, 733, 827, 2391, 847, 123456))) = " +
+                getLargestValueIndex(new ArrayList<Integer>(Arrays.asList(
+                        12, 32, 42, 22, 86, 734, 0, 23, 75, 733, 827, 2391, 847, 123456)))); // Expected: 13
     }
 
 }

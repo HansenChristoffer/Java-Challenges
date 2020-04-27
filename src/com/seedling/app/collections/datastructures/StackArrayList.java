@@ -1,4 +1,4 @@
-package com.seedling.app.datastructures;
+package com.seedling.app.collections.datastructures;
 
 import java.util.*;
 

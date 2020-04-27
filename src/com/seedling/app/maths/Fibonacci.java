@@ -1,4 +1,4 @@
-package com.seedling.app.fibonacci;
+package com.seedling.app.maths;
 
 /**
  * Fibonacci sequence with two different "end conditions".
