@@ -1,4 +1,4 @@
-package com.seedling.app.first_and_last_digits;
+package com.seedling.app.maths;
 
 public class FirstLastDigit {
 

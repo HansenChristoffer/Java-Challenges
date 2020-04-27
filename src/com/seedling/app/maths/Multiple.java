@@ -1,4 +1,4 @@
-package com.seedling.app.multiples;
+package com.seedling.app.maths;
 
 public class Multiple {
 

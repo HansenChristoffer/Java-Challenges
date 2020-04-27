@@ -1,6 +1,6 @@
-package com.seedling.app.multiples;
+package com.seedling.app.maths;
 
-import static com.seedling.app.multiples.Multiple.isMultiple;
+import static com.seedling.app.maths.Multiple.isMultiple;
 
 public class SumOfDivThreeFive {
 

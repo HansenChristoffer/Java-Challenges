@@ -7,11 +7,10 @@ import com.seedling.app.reverse.ReverseArray;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static com.seedling.app.fibonacci.Fibonacci.*;
-import static com.seedling.app.first_and_last_digits.FirstLastDigit.firstDigit;
-import static com.seedling.app.first_and_last_digits.FirstLastDigit.lastDigit;
-import static com.seedling.app.multiples.Multiple.isMultiple;
-import static com.seedling.app.multiples.SumOfDivThreeFive.sumOfDivisibleThreeAndFive;
+import static com.seedling.app.maths.FirstLastDigit.firstDigit;
+import static com.seedling.app.maths.FirstLastDigit.lastDigit;
+import static com.seedling.app.maths.Multiple.isMultiple;
+import static com.seedling.app.maths.SumOfDivThreeFive.sumOfDivisibleThreeAndFive;
 import static com.seedling.app.palindrome.Palindrome.isPalindrome;
 import static com.seedling.app.reverse.ReverseWord.reverseWord;
 import static com.seedling.app.searches.BinarySearch.binarySearch;
