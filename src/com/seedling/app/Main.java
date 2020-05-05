@@ -5,6 +5,7 @@ import com.seedling.app.collections.datastructures.QueueArrayList;
 import com.seedling.app.collections.datastructures.StackArrayList;
 import com.seedling.app.maths.Fibonacci;
 import com.seedling.app.reverse.ReverseArray;
+import com.seedling.app.searches.LinearSearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,6 +23,7 @@ import static com.seedling.app.maths.SumOfDivThreeFive.sumOfDivisibleThreeAndFiv
 import static com.seedling.app.palindrome.Palindrome.isPalindrome;
 import static com.seedling.app.reverse.ReverseWord.reverseWord;
 import static com.seedling.app.searches.BinarySearch.binarySearch;
+import static com.seedling.app.searches.LinearSearch.linearSearch;
 import static com.seedling.app.sorts.Sort.sortInt;
 import static com.seedling.app.sorts.Sort.sortString;
 
@@ -49,6 +51,7 @@ public class Main {
 //        allDigitsDemonstration();
 //        armstrongNumberDemonstration();
 //        maxValueDemonstration();
+        linearSearchDemonstration();
     }
 
     private void palindromeDemonstration() {
@@ -237,6 +240,27 @@ public class Main {
                 "734, 0, 23, 75, 733, 827, 2391, 847, 123456))) = " +
                 getLargestValueIndex(new ArrayList<Integer>(Arrays.asList(
                         12, 32, 42, 22, 86, 734, 0, 23, 75, 733, 827, 2391, 847, 123456)))); // Expected: 13
+    }
+
+    private void linearSearchDemonstration() {
+        int[] lIntTestArr = {12, 32, 4, 23, 76, 763, 872, -12, -746, 0, 7236};
+        int e = 763;
+
+        System.out.format("Searching for %d and found it at index %d%n", e, linearSearch(lIntTestArr, e));
+
+        double[] lDouTestArr = {12.32, 32.04, 4.23, 23.0076, 76.763, 763.872, 872.012, -12.0746, -746.0, 0.7236, 7236.987000043};
+        double eDou = 763.872;
+
+        System.out.format("Searching for %f and found it at index %d%n", eDou, linearSearch(lDouTestArr, eDou));
+
+        String[] lStrTestArr = {"Hello", "World", "I", "Would", "Love", "A", "Job", "!"};
+        String eStr = "WouLD";
+
+        System.out.format("Searching for %s, non-strict and found it at index %d%n", eStr, linearSearch(lStrTestArr, eStr, false));
+        System.out.format("Searching for %s, strict and found it at index %d%n", eStr, linearSearch(lStrTestArr, eStr, true));
+        System.out.format("Searching for %s, default strictness and found it at index %d%n", eStr, linearSearch(lStrTestArr, eStr));
+
+
     }
 
 }
