@@ -51,7 +51,7 @@ public class Main {
 //        allDigitsDemonstration();
 //        armstrongNumberDemonstration();
 //        maxValueDemonstration();
-        linearSearchDemonstration();
+//        linearSearchDemonstration();
     }
 
     private void palindromeDemonstration() {
